@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <title>Landing page</title>
+        <link rel="stylesheet" src="index.css"/>
+        <style>
+
+        body{
+           background-color: #ffd59a;
+        }
+        header{
+           display: flex;
+           justify-content: space-between;
+           background-color:transparent;
+           margin: 6%;
+         }
+        ul{
+           list-style-type: none;
+           margin: 0;
+           padding: 2%;
+           background-color: transparent;
+           color: #7b4c3d;
+           width: 100%;
+           font-size: 20px;
+        }
+ 
+         li{
+            display: inline-flex;
+            margin: 12px;
+            border-right: 1px;
+            border: 2px;
+         }
+        #next {
+            display: flex;
+            flex-direction: row;
+            background-color: transparent;
+            font-weight: bold;
+            justify-content: space-between;
+        }
+        #text{
+            padding: 7%;
+        }
+        h1{
+            margin-bottom: 8%;
+        }
+        h3{
+            margin-top: 10%;
+            font-size: 18px;
+            color: white;
+        }
+        #real{
+            width: 100%;
+            height: 100%;
+            object-fit:fill;
+        }
+        button{
+            background-color: #4b2b16;
+            color: white;
+            border-radius: 25px;
+            padding: 20px;
+            border: none;
+            margin-top: 10%;
+            font-size: 18px;
+        }
+        footer{
+            color: white;
+        }
+        #containerdiv{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color:#4b2b16;
+            font-weight: bold;
+            margin-top: 10%;
+            padding: 20px;
+            margin-bottom: 0;
+            color: white;
+        }
+        @media (min-width:320px) and (max-width:480px){
+            header{
+                display: block;
+            }
+            ul{
+                display: block;
+                font-size: 16px;
+            }
+            #next{
+                flex-direction: column;
+            }
+        }
+       
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="headerdiv">
+                <h1>ARA!</h1>
+            </div>
+            <div>
+            <ul>
+                <li>About</a></li>
+                <li>Contact</a></li>
+                <li>Registration</a></li>
+                <li>Login</a></li>
+            </ul>
+            </div>
+        </header>
+        <main>
+            <div id="next">
+            <div id="text">
+                <h1>Freshly Baked!</h1>
+                <h3> Ara's is where you go to, to get your fantasies fulfilled<br> 
+                    We offer a variety of baked goods, all suited to your 
+                    tastes and means.
+                    use any of the action buttons on this page to
+                    begin placing an order now.<br>Or to get added to our regular's list
+                    and all the yummy benefits that come with it.</h3>
+                <button id="contact" > Get started</button>
+            </div>
+            <div id="image" align="right" >
+                <img id="real" src="png_20220929_232148_0000.png" alt="picture"/>
+            </div>
+        </main>
+        <footer>
+            <div id="containerdiv">
+              <div id="one">
+                <img src="voicemail (1).svg" alt="voicemail logo"/><br>
+                <h3>Leave a voicemail</h3>
+            </div>
+              <div id="two">
+                <img src="thumbs-up.svg" alt="thumbs-up logo"/><br>
+                <h3>Leave a positive comment</h3>
+              </div>
+              <div id="three">
+                <img src="coffee.svg" alt="coffee logo"/><br>
+                <h3>Schedule a date.</h3>
+              </div>
+            </div>   
+        </footer>
+    </body>
+</html>
